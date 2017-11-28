@@ -1,0 +1,1386 @@
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web');
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+    margin: 0px;
+    width: 100%;
+}
+
+header {
+    position: fixed;
+    text-align: center;
+    background-color: white;
+    border-bottom: solid;
+    border-bottom-color: #333333;
+    opacity: 1;
+    width: 100%;
+    height: 50px;
+    top: 0;
+}
+
+.logo {
+    position: absolute;
+    width: 22.2%;
+    margin-left: -27%;
+    margin-top: -1.2%;
+}
+
+a {
+    text-decoration: none;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 120%;
+    color: white;
+}
+
+.devel {
+    margin-top: -18%;
+}
+
+.akt {
+    text-align: center;
+    width: 100%;
+    height: 300px;
+    border: 2px solid black;
+    display: inline-block;
+    background-color: white;
+}
+
+.bob {
+    color: black;
+    text-decoration: underline;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.api {
+    font-family: 'Titillium Web', sans-serif;
+    margin: 50px 25px 10px 25px;
+}
+
+.arkside {
+    background-color: #333333;
+    bottom: 0;
+    width: 100%;
+    height: 250px;
+    margin-bottom: 0%;
+    text-align: center;
+    padding-top: 0%;
+}
+
+h1 {
+    font-family: 'Titillium Web', sans-serif;
+    margin-top: 0px;
+    font-size: 40px;
+    color: white;
+}
+footer {
+    bottom: 0;
+    border-top: 2px solid black;
+    width: 100%;
+    height: 150px;
+}
+
+/*take away forside slut*/
+
+/*take away underside start*/
+
+.pic2 {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 50%;
+}
+
+
+
+.takeawaymenu {
+    margin-top: 80px;
+    text-align: center;
+}
+
+/*take away slut*/
+
+/* om os start*/
+
+.omos {
+    margin-top: 80px;
+    text-align: center;
+}
+
+.omospic img {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#omLaTra {
+    text-align: center;
+}
+.omosLaTra{
+    font-family: 'Titillium Web', sans-serif;
+}
+.omLaTra1{
+    font-family: 'Titillium Web', sans-serif;
+}
+.befinder{
+    width: 80%;
+    text-align: center;
+    margin-left: 10%;
+}
+.textbefind{
+    color: black;
+    font-family: 'Titillium Web', sans-serif;   
+    font-size:200%;
+}
+
+    .anmel{
+        text-align: center;
+        margin-bottom: 5%;
+    }
+    .trip{
+        color: black;
+        font-size: 25px;
+        text-decoration: underline;
+    }
+.catering{
+    font-family: 'Titillium Web', sans-serif;
+}
+#socio{
+    font-family: 'Titillium Web', sans-serif;
+}
+
+/*MOBIL*/
+
+@media (max-width: 762px) {
+    body {
+        width: 100%;
+    }
+    .ttop {
+        display: none;
+    }
+    .menu {
+        visibility: hidden;
+
+    }
+    .desktoplogo{
+        display: none;
+    }
+
+    .menukort {
+        visibility: hidden;
+    }
+
+    .hojre {
+        visibility: hidden;
+    }
+    .social{
+        display: none;  
+    }
+    .sitemap{
+        display: none;
+    }
+    .logo {
+        margin-left: 0%;
+        margin-top: -48%;
+    }
+
+    .mlink {
+        color: black;
+    }
+    .mh {
+        font-family: 'Titillium Web', sans-serif;
+        font-size: 30px;
+        margin-bottom: 15%;
+    }
+    .pic2 {
+        width: 100%;
+    }
+    .omospic {
+        width: 100%;
+        ;
+    }
+    .section {
+        text-align: center;
+        margin-top: 21.5%;
+    }
+    header {
+        height: 70px;
+        text-align: left;
+        z-index: 2;
+    }
+    .akt {
+        margin: 0% 0%;
+        overflow: hidden;
+    }
+    /* burger menu */
+    #menuToggle {
+        display: block;
+        position: absolute;
+        top: 29px;
+        right: 20px;
+        z-index: 1;
+        -webkit-user-select: none;
+        user-select: none;
+    }
+    #menuToggle input {
+        display: block;
+        width: 40px;
+        height: 32px;
+        position: absolute;
+        top: -7px;
+        left: -15px;
+        cursor: pointer;
+        opacity: 0;
+        /* hide this */
+        z-index: 2;
+        /* and place it over the hamburger */
+        -webkit-touch-callout: none;
+    }
+    /*
+ * Just a quick hamburger
+ */
+    #menuToggle span {
+        display: block;
+        width: 33px;
+        height: 4px;
+        margin-bottom: 5px;
+        position: relative;
+        background: #cdcdcd;
+        border-radius: 3px;
+        z-index: 1;
+        transform-origin: 4px 0px;
+        transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0), opacity 0.55s ease;
+    }
+    #menuToggle span:first-child {
+        transform-origin: 0% 0%;
+    }
+    #menuToggle span:nth-last-child(2) {
+        transform-origin: 0% 100%;
+    }
+    /* 
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+    #menuToggle input:checked ~ span {
+        opacity: 1;
+        transform: rotate(45deg) translate(-2px, -1px);
+        background: white;
+    }
+    /*
+ * But let's hide the middle one.
+ */
+    #menuToggle input:checked ~ span:nth-last-child(3) {
+        opacity: 0;
+        transform: rotate(0deg) scale(0.2, 0.2);
+    }
+    /*
+ * Ohyeah and the last one should go the other direction
+ */
+    #menuToggle input:checked ~ span:nth-last-child(2) {
+        transform: rotate(-45deg) translate(0, -1px);
+    }
+    /*
+ * Make this absolute positioned
+ * at the top left of the screen
+ */
+    #menu {
+        position: absolute;
+        width: 300px;
+        margin: -105px 0 0 -245px;
+        padding: 50px;
+        padding-top: 125px;
+        opacity: 0.95;
+        background: #333333;
+        list-style-type: none;
+        -webkit-font-smoothing: antialiased;
+        /* to stop flickering of text in safari */
+        transform-origin: 0% 0%;
+        transform: translate(100%, 0);
+        transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+    }
+    #menu li {
+        padding: 10px 0;
+        font-size: 22px;
+    }
+    /*
+ * And let's slide it in from the left
+ */
+    #menuToggle input:checked ~ ul {
+        transform: none;
+    }
+
+    /* take away*/
+    .flex {
+        background-color: white;
+        width: 100%;
+        height: 80%;
+        border: solid;
+        overflow: hidden;
+        border-color: rgba(0, 0, 0, 0);
+        color: #2b2b2b;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.30);
+
+    }
+    .artikler {
+        margin-top: 20%;
+
+    }
+    .bob1 {
+        height: 250px;
+    }
+    .map{
+        width: 100%;
+    }
+    footer{
+        margin-top: -1.2%;
+    }
+    .conta{
+        width: 4%;
+    }
+
+    .pic {
+        width: 200px;
+        height: 200px;
+        margin: 0px 0px;
+        cursor: pointer;
+    }
+
+    .pizzatake {
+        color: #151514;
+        font: bold 24px/45px;
+        background: ;
+        padding-left: 10px;
+        padding-right: 4px;
+        font-family: 'Titillium Web', sans-serif;
+        position: absolute;
+        top: 120px;
+        left: 240px;
+        font-size: 20px;
+    }
+
+    .pastatake {
+        color: #151514;
+        font: bold 24px/45px;
+        background: ;
+        padding-left: 10px;
+        padding-right: 4px;
+        font-family: 'Titillium Web', sans-serif;
+        position: absolute;
+        top: 360px;
+        left: 200px;
+        font-size: 20px;
+    }
+
+    .pastastake {
+        color: #151514;
+        font: bold 24px/45px;
+        background: ;
+        padding-left: 10px;
+        padding-right: 4px;
+        font-family: 'Titillium Web', sans-serif;
+        position: absolute;
+        top: 550px;
+        left: 200px;
+        font-size: 20px;
+    }
+
+    .sandwichtake {
+
+        color: #151514;
+        font: bold 24px/45px;
+        background: ;
+        padding-left: 10px;
+        padding-right: 4px;
+        font-family: 'Titillium Web', sans-serif;
+        position: absolute;
+        top: 740px;
+        left: 200px;
+        font-size: 20px;
+
+    }
+
+    .kodtake {
+        color: #151514;
+        font: bold 24px/45px;
+        background: ;
+        padding-left: 10px;
+        padding-right: 4px;
+        font-family: 'Titillium Web', sans-serif;
+        position: absolute;
+        top: 950px;
+        left: 200px;
+        font-size: 20px;
+    }
+
+    .desserttake {
+        color: #151514;
+        font: bold 24px/45px;
+        background: ;
+        padding-left: 10px;
+        padding-right: 4px;
+        font-family: 'Titillium Web', sans-serif;
+        position: absolute;
+        top: 1150px;
+        left: 200px;
+        font-size: 20px;
+    }
+
+    a {
+        text-decoration: none;
+    }
+    .overskrift {
+        text-align: center;
+    }
+
+    .catering {
+        font-size: 110%;
+        padding-left: 5px; 
+        padding-right: 5px;
+        padding-top: 0px;   
+        margin-left: 2%;
+        margin-right: 2%;
+        height: 230px;
+    }
+
+    .sandwichbaggrund {
+        width: 110%;
+        height: 42%;
+        position: absolute;
+        opacity: 0.35;
+        margin-top: -75%;
+        margin-left: -10%;
+    }
+    .background {
+        position: absolute;
+        width: 100%;
+        height: 63%;
+        opacity: 0.2;
+        margin-top: 19%;
+        left: 0;
+        top: 0;
+    }
+    .overskrift {
+        text-align: center;
+    }
+    .bestil{
+        margin-top: 10%;
+    }
+    .bestilbord {
+        font-size: 125%;
+        margin-left: 16%;
+        color: black;
+        font-family: 'Titillium Web', sans-serif;
+    }
+    .oplysninger {
+        font-size: 125%;
+        border: 2.2px solid black;
+        width: 80%;
+        text-align: center;
+        margin-left: 10%;
+        color: black;
+        margin-top: 10%;
+        z-index: 100;
+        font-family: 'Titillium Web', sans-serif;
+
+    }
+    .dato {
+        border: 2.2px solid black;
+        width: 30%;
+        float: right;
+        color: white;
+        margin-top: -10%;
+        margin-right: 15%;
+    }
+    .tid {
+        border: 2.2px solid black;
+        width: 30%;
+        float: right;
+        color: white;
+        margin-right: 15%;
+        margin-top: -10%;
+    }
+    .personer {
+        border: 2.2px solid black;
+        width: 30%;
+        float: right;
+        margin-right: 15%;
+        color: white;
+        margin-top: -10%;
+    }
+        .section {
+        position: relative;
+        top 0;
+        width: 100%;
+        z-index: -1;
+    }
+    .akt {
+        text-align: center;
+        overflow: hidden;
+        width: 100%;
+        height: auto;
+        border: solid;
+        display: inline-block;
+        background-color: white;
+		
+    }
+	.akt img {
+		position: relative;
+		
+	}
+    .apita{
+        display: none;
+    }
+	.textcenter {
+	    position: absolute;
+        top: 25%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+		z-index: 1;
+		text-align: center;
+		font-family: 'Titillium Web', sans-serif;
+		background: rgba(187, 190, 193,0.7);
+	}
+    .text1{
+        top: 45%;
+    }
+	.textcenter1 {
+	    position: absolute;
+        top: 80%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+		z-index: 1;
+		text-align: center;
+		font-family: 'Titillium Web', sans-serif;
+		background: rgba(214, 217, 219,0.7);
+	}
+	.textcenter h1{
+		color: #fff;
+		font-size: 250%;
+		margin-bottom: 5px;
+	}
+	.textcenter1{
+        width: auto;
+		color: #fff;
+		font-size: 250%;  
+		margin-bottom: 5px;
+	}
+    .pic1{
+        width: 100%;
+        opacity: 0.7;
+    }
+    .pic3{
+    height: 22%;
+    }
+    .omos{
+        
+    }
+}
+
+
+@media (min-width: 763px) and (max-width: 1023px) {
+    .menu {
+        visibility: hidden;
+    }
+    .ttop {
+        display: none;
+    }
+
+    .menukort {
+        visibility: hidden;
+    }
+    .desktoplogo{
+        display: none;
+    }
+    .hojre {
+        visibility: hidden;
+    }
+    .sitemap{
+        display: none;
+    }   
+    .logo {
+        margin-left: 0%;
+        top: 0;
+        width: 15%
+    }
+    header {
+        height: 80px;
+        text-align: left;
+        z-index: 2;
+    }
+    .section {
+        margin-top: 6%;
+    }
+    .akt {
+        height: 620px;
+        overflow: hidden;
+    }
+    /* burger menu */
+    #menuToggle {
+        display: block;
+        position: absolute;
+        top: 29px;
+        right: 20px;
+        z-index: 1;
+        -webkit-user-select: none;
+        user-select: none;
+    }
+    #menuToggle input {
+        display: block;
+        width: 40px;
+        height: 32px;
+        position: absolute;
+        top: -7px;
+        left: -5px;
+        cursor: pointer;
+        opacity: 0;
+        /* hide this */
+        z-index: 2;
+        /* and place it over the hamburger */
+        -webkit-touch-callout: none;
+    }
+    /*
+ * Just a quick hamburger
+ */
+    #menuToggle span {
+        display: block;
+        width: 33px;
+        height: 4px;
+        margin-bottom: 5px;
+        position: relative;
+        background: #cdcdcd;
+        border-radius: 3px;
+        z-index: 1;
+        transform-origin: 4px 0px;
+        transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0), opacity 0.55s ease;
+    }
+    #menuToggle span:first-child {
+        transform-origin: 0% 0%;
+    }
+    #menuToggle span:nth-last-child(2) {
+        transform-origin: 0% 100%;
+    }
+    /* 
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+    #menuToggle input:checked ~ span {
+        opacity: 1;
+        transform: rotate(45deg) translate(-2px, -1px);
+        background: white;
+    }
+    /*
+ * But let's hide the middle one.
+ */
+    #menuToggle input:checked ~ span:nth-last-child(3) {
+        opacity: 0;
+        transform: rotate(0deg) scale(0.2, 0.2);
+    }
+    /*
+ * Ohyeah and the last one should go the other direction
+ */
+    #menuToggle input:checked ~ span:nth-last-child(2) {
+        transform: rotate(-45deg) translate(0, -1px);
+    }
+    /*
+ * Make this absolute positioned
+ * at the top left of the screen
+ */
+    #menu {
+        position: absolute;
+        width: 320px;
+        margin: -105px 0 0 -265px;
+        padding: 50px;
+        padding-top: 125px;
+        opacity: 0.95;
+        background: #333333;
+        list-style-type: none;
+        -webkit-font-smoothing: antialiased;
+        /* to stop flickering of text in safari */
+        transform-origin: 0% 0%;
+        transform: translate(100%, 0);
+        transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+    }
+    #menu li {
+        padding: 10px 0;
+        font-size: 22px;
+    }
+    /*  
+ * And let's slide it in from the left
+ */
+    #menuToggle input:checked ~ ul {
+        transform: none;
+    }
+    .flex {
+        background-color: white;
+        width: 500px;
+        height: 250px;
+        margin: 20px 50px 20px 80px;
+        border: solid;
+        overflow: hidden;
+        border-color: rgba(0, 0, 0, 0);
+        color: #2b2b2b;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.30);
+
+    }
+    .bob1 {
+        display: -webkit-flex;
+        display: flex;
+        flex-wrap: wrap;
+        -webkit-justify-content: center;
+        justify-content: center;
+        height: auto;
+        background-color: ;
+        padding-top: 20px;
+    }
+    .pic {
+        width: 250px;
+        height: 250px;
+        margin: 0px 0px;
+        cursor: pointer;
+    }
+    .pizzatake {
+        color: black;
+        font: bold 24px/45px;
+        padding-left: 10px;
+        padding-right: 4px;
+        font-family: 'Titillium Web', sans-serif;
+        position: absolute;
+        top: 150px;
+        left: 520px;
+        font-size: 40px;
+    }
+    .pastatake {
+        color: #151514;
+        font: bold 24px/45px;
+        background: ;
+        padding-left: 10px;
+        padding-right: 4px;
+        font-family: 'Titillium Web', sans-serif;
+        position: absolute;
+        top: 440px;
+        left: 467px;
+        font-size: 40px;
+    }
+    .pastastake {
+        color: #151514;
+        font: bold 24px/45px;
+        background: ;
+        padding-left: 10px;
+        padding-right: 4px;
+        font-family: 'Titillium Web', sans-serif;
+        position: absolute;
+        top: 740px;
+        left: 467px;
+        font-size: 40px;
+    }
+    .sandwichtake {
+        color: #151514;
+        font: bold 24px/45px;
+        background: ;
+        padding-left: 10px;
+        padding-right: 4px;
+        font-family: 'Titillium Web', sans-serif;
+        position: absolute;
+        top: 1025px;
+        left: 467px;
+        font-size: 40px;
+
+    }
+
+    .kodtake {
+        color: #151514;
+        font: bold 24px/45px;
+        background: ;
+        padding-left: 10px;
+        padding-right: 4px;
+        font-family: 'Titillium Web', sans-serif;
+        position: absolute;
+        top: 1320px;
+        left: 467px;
+        font-size: 40px;
+    }
+    .desserttake {
+        color: #151514;
+        font: bold 24px/45px;
+        background: ;
+        padding-left: 10px;
+        padding-right: 4px;
+        font-family: 'Titillium Web', sans-serif;
+        position: absolute;
+        top: 1600px;
+        left: 467px;
+        font-size: 40px;
+    }
+    a {
+        text-decoration: none;
+    }
+    .artikler {
+        margin-top: 5.5%;
+        border: 1px solid white;
+    }
+    footer{
+        margin-top: -0.9%;
+        height: 150px;
+    }
+    .social {
+        width: 30%;
+        height: 30px;
+        display: inline;
+        float: right;
+        margin-right: 6.8%;
+        margin-top: -15%;
+    }
+    .soci{
+        width: 15%;
+    }
+
+    .overskrift {
+        text-align: center;
+    }
+
+    .catering {
+        font-size: 120%;
+        margin-left: 19%;
+        margin-right: 19%;
+        margin-top: 10%;
+    }
+
+    .sandwichbaggrund {
+        width: 73%;
+        height: 36%;
+        position: absolute;
+        opacity: 0.3;
+        margin-top: -19%;
+        margin-left: 13%;
+        margin-right: 10%;
+    }
+    .bestil{
+        margin-top: 10%;
+    }
+    .background {
+        position: absolute;
+        width: 100%;
+        height:100%;
+        opacity: 0.2;
+        margin-top: -6%;
+        left: 0;
+        top: 0;
+    }
+    .overskrift {
+        text-align: center;
+    }
+    .bestilbord {
+        font-size: 125%;
+        margin-left: 25%;
+        color: black;
+        font-family: 'Titillium Web', sans-serif;
+    }
+    .oplysninger {
+        font-size: 125%;
+        border: 2.2px solid black;
+        width: 50%;
+        text-align: center;
+        margin-left: 25%;
+        color: black;
+        margin-top: 4%;
+        font-family: 'Titillium Web', sans-serif;
+
+    }
+    .dato {
+        border: 2.2px solid black;
+        width: 30%;
+        float: right;
+        color: white;
+        margin-top: -4%;
+        margin-right: 25%;
+    }
+    .tid {
+        border: 2.2px solid black;
+        width: 30%;
+        float: right;
+        color: white;
+        margin-right: 25%;
+        margin-top: -4%;
+    }
+    .personer {
+        border: 2.2px solid black;
+        width: 30%;
+        float: right;
+        margin-right: 25%;
+        color: white;
+        margin-top: -4%;
+    }
+     .section {
+        position: relative;
+        top 0;
+        width: 100%;
+        z-index: -1;
+    }
+    .akt {
+        text-align: center;
+        overflow: hidden;
+        width: 100%;
+        height: auto;
+        border: solid;
+        display: inline-block;
+        background-color: white;
+		
+    }
+	.akt img {
+		position: relative;
+		
+	}
+	.textcenter {
+	    position: absolute;
+        top: 55%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+		z-index: 1;
+		text-align: center;
+		font-family: 'Titillium Web', sans-serif;
+		background: rgba(214, 217, 219, 0.7);
+	}
+    .text1{
+        top: 40%;
+    }
+	.textcenter1 {
+	    position: absolute;
+        top: 80%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+		z-index: 1;
+		text-align: center;
+		font-family: 'Titillium Web', sans-serif;
+		background: rgba(214, 217, 219, 0.7);
+	}
+	.textcenter h1{
+		color: #fff;
+		font-size: 500%;
+		margin-bottom: 5px;
+	}
+	.textcenter1{
+        width: 350px;
+		color: #fff;
+		font-size: 500%;
+		margin-bottom: 5px;
+	}
+    .pic1{
+        width: 100%;
+        opacity: 0.7;
+    }
+    .pic3{
+    height: 22%;
+    }
+
+
+}
+
+@media (min-width: 1024px) {
+    body {
+        height: auto;
+        width: 100%;
+    }
+    #menuToggle {
+        visibility: hidden;
+    }
+    .mobillogo{
+        display: none;
+    }
+    header {
+        position: fixed;
+        background-color: white;
+        border-bottom: 1px solid black;
+        border-bottom-color: white;
+        width: 100%;
+        height: 86.5px;
+        top: 0;
+        z-index: 2;
+    }
+
+    .menukort {
+        margin-top: 80px;
+        text-align: center;
+    }
+
+    .menukort img {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+
+    /* dropdown menu lavet på bagrund af W3shcools*/
+    .dropbtn {
+        background-color: white;
+        height: 20px;
+        color: black;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+        font-family: 'Titillium Web', sans-serif;
+        margin-left: 2.4%;
+    }
+    .dropbtns {
+        font-size: 120%;
+    }
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: white;
+        min-width: 100px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+    }
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        font-size: 100%;
+    }
+    .dropdown-content a:hover {
+        background-color: lightgray;
+        color: black;
+    }
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+    .dropdown:hover .dropbtns {
+        background-color: white;
+    }
+    /* slut på dropdown menu*/
+    a {
+        text-decoration: none;
+        color: white;
+    }
+    .menu {
+        float: left;
+        width: 33%;
+        margin-left: 3.5%;
+        padding: 1%;
+        margin-top: 0.4%;
+    }
+    .navhojre {
+        float: right;
+        display: inline;
+        list-style-type: none;
+        margin-right: 3.6%;
+        padding: 1%;
+        margin-top: 0.4%;
+        overflow: hidden;
+    }
+    .hojre {
+        margin-right: 3.2%;
+    }
+    a {
+        text-decoration: none;
+        color: black;
+    }
+    li a:hover {
+        background-color: lightgray;
+    }
+    .section {
+        position: absolute;
+        top 0;
+        width: 100%;
+    }
+    .omospic {
+        margin-top: 3.5%;
+    }
+    
+    .articel {
+        padding: 5% 15%;
+    }
+    h1 {
+        font-family: 'Titillium Web', sans-serif;
+        margin-top: 0px;
+        font-size: 40px;
+        color: white;
+    }
+
+    footer {
+        bottom: 0px;
+        height: 250px;
+        padding-top: 35px;
+        margin-top: -0.5%;
+    }
+
+
+    .social {
+        width: 30%;
+        height: 30px;
+        display: inline;
+        float: right;
+        margin-right: 6.8%;
+        margin-top: -8%;
+    }
+    .sitemapp{
+        color: black;
+        float: right;
+        margin-right: 1%;
+        font-size: 15px;
+        text-decoration: underline;
+    }
+    .info {
+        float: left;
+        margin-left: 10%;
+    }
+    .ttop {
+        float: right;
+        margin-top: -15%;
+        margin-right: 24%;
+        margin-bottom: 1%;
+    }
+    .tttop {
+        height: 30px;
+        font-family: 'Titillium Web', sans-serif;
+    }
+    .conta {
+        margin-top: 5px;
+    }
+
+    .con {
+        width: 50%;
+        list-style-type: none;
+        font-family: 'Titillium Web', sans-serif;
+        line-height: 35px;
+        font-size: 25px;
+
+    }
+    .flex {
+        background-color: white;
+        width: 700px;
+        height: 250px;
+        margin: 20px 50px 20px 80px;
+        border: solid;
+        overflow: hidden;
+        border-color: rgba(0, 0, 0, 0);
+        color: #2b2b2b;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.30);
+
+    }
+    .bob1 {
+        display: -webkit-flex;
+        display: flex;
+        flex-wrap: wrap;
+        -webkit-justify-content: center;
+        justify-content: center;
+        height: auto;
+        background-color: ;
+        padding-top: 150px;
+    }
+    .pic {
+        width: 350px;
+        height: 300px;
+        margin: 0px 0px;
+        cursor: pointer;
+    }
+    .pizzatake {
+        color: black;
+        font: bold 24px/45px;
+        padding-left: 10px;
+        padding-right: 4px;
+        font-family: 'Titillium Web', sans-serif;
+        position: absolute;
+        top: 250px;
+        left: 890px;
+        font-size: 40px;
+    }
+    .pastatake {
+        color: #151514;
+        font: bold 24px/45px;
+        background: ;
+        padding-left: 10px;
+        padding-right: 4px;
+        font-family: 'Titillium Web', sans-serif;
+        position: absolute;
+        top: 540px;
+        left: 850px;
+        font-size: 40px;
+    }
+    .pastastake {
+        color: #151514;
+        font: bold 24px/45px;
+        background: ;
+        padding-left: 10px;
+        padding-right: 4px;
+        font-family: 'Titillium Web', sans-serif;
+        position: absolute;
+        top: 840px;
+        left: 840px;
+        font-size: 40px;
+    }
+    .sandwichtake {
+        color: #151514;
+        font: bold 24px/45px;
+        background: ;
+        padding-left: 10px;
+        padding-right: 4px;
+        font-family: 'Titillium Web', sans-serif;
+        position: absolute;
+        top: 1125px;
+        left: 840px;
+        font-size: 40px;
+
+    }
+
+    .kodtake {
+        color: #151514;
+        font: bold 24px/45px;
+        background: ;
+        padding-left: 10px;
+        padding-right: 4px;
+        font-family: 'Titillium Web', sans-serif;
+        position: absolute;
+        top: 1420px;
+        left: 840px;
+        font-size: 40px;
+    }
+    .desserttake {
+        color: #151514;
+        font: bold 24px/45px;
+        background: ;
+        padding-left: 10px;
+        padding-right: 4px;
+        font-family: 'Titillium Web', sans-serif;
+        position: absolute;
+        top: 1700px;
+        left: 840px;
+        font-size: 40px;
+    }
+    a {
+        text-decoration: none;
+    }
+    .overskrift {
+        text-align: center;
+    }
+
+    .catering {
+        font-size: 130%;
+        margin-left: 28%;
+        margin-right: 28%;
+        margin-top: 13%;
+        margin-bottom: 10%;
+    }
+
+    .sandwichbaggrund {
+        width: 50%;
+        height: 40%;
+        position: absolute;
+        opacity: 0.3;
+        margin-top: -23%;
+        margin-left: 25%;
+        margin-right: 10%;
+    }
+    .background {
+        position: absolute;
+        width: 100%;
+        height: 425px;
+        opacity: 0.2;
+    }
+    .bestil {
+        margin-top: 8%;
+        margin-bottom: 2%;
+    }
+    .overskrift {
+        text-align: center;
+    }
+    .bestilbord {
+        font-size: 125%;
+        margin-left: 40%;
+        color: black;
+        font-family: 'Titillium Web', sans-serif;
+    }
+    .oplysninger {
+        font-size: 125%;
+        border: 2.2px solid black;
+        width: 40%;
+        text-align: center;
+        margin-left: 30%;
+        color: black;
+        margin-top: 2%;
+        font-family: 'Titillium Web', sans-serif;
+
+    }
+    .dato {
+        border: 2.2px solid black;
+        width: 14%;
+        float: right;
+        color: white;
+        margin-top: -3%;
+        margin-right: 39%;
+    }
+    .tid {
+        border: 2.2px solid black;
+        width: 14%;
+        float: right;
+        color: white;
+        margin-right: 39%;
+        margin-top: -3%;
+    }
+    .personer {
+        border: 2.2px solid black;
+        width: 14%;
+        float: right;
+        margin-right: 39%;
+        color: white;
+        margin-top: -3%;
+    }
+        .section {
+        position: relative;
+        top 0;
+        width: 100%;
+        z-index: -1;
+    }
+    .akt {
+        text-align: center;
+        overflow: hidden;
+        width: 100%;
+        height: 770px;
+        border: solid;
+        display: inline-block;
+        background-color: white;
+		
+    }
+	.akt img {
+		position: relative;
+		
+	}
+	.textcenter {
+	    position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+		z-index: 1;
+		text-align: center;
+		font-family: 'Titillium Web', sans-serif;
+		background: rgba(214, 217, 219, 0.7);
+	}
+	.textcenter1 {
+	    position: absolute;
+        top: 85%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+		z-index: 1;
+		text-align: center;
+		font-family: 'Titillium Web', sans-serif;
+		background: rgba(214, 217, 219, 0.7);
+	}
+	.textcenter h1{
+		color: #fff;
+		font-size: 500%;
+		margin-bottom: 5px;
+	}
+	.textcenter1{
+        width: 350px;
+		color: #fff;
+		font-size: 500%;
+		margin-bottom: 5px;
+	}
+    .pic1{
+        width: 100%;
+        opacity: 0.7;
+    }
+    
+}

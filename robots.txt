@@ -1,0 +1,1 @@
+# robots.txt file for http://laTrattoria.github.ioUser-agent: GoogleDisallow:User-agent: *Disallow: /
